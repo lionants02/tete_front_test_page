@@ -57,8 +57,9 @@ async function joinSession() {
         get: (searchParams, prop) => searchParams.get(prop),
     });
 
-    var sessionName = params.t;
-
+    const sessionName = params.t;
+    const participantName = params.name;
+    
     console.log("Session name ", sessionName);
 
     // Requesting tokens
@@ -71,7 +72,7 @@ async function joinSession() {
     // Displaying webcomponent
     webComponent.style.display = 'block';
     hideForm();
-    // webComponent.participantName = participantName;
+    webComponent.participantName = participantName;
 
     // You can see the UI parameters documentation here
     // https://docs.openvidu.io/en/stable/api/openvidu-angular/components/OpenviduWebComponentComponent.html#inputs
