@@ -79,21 +79,21 @@ async function joinSession() {
 
     // webComponent.toolbarScreenshareButton = false;
     // webComponent.minimal = true;
-    // webComponent.prejoin = true;
+    webComponent.prejoin = false;
 
     // webComponent.videoMuted = false;
     // webComponent.audioMuted = false;
 
     // webComponent.toolbarScreenshareButton = true;
-    // webComponent.toolbarFullscreenButton = true;
+    webComponent.toolbarFullscreenButton = false;
     // webComponent.toolbarLeaveButton = true;
     // webComponent.toolbarChatPanelButton = true;
     // webComponent.toolbarParticipantsPanelButton = true;
-    // webComponent.toolbarDisplayLogo = true;
+    webComponent.toolbarDisplayLogo = false;
     // webComponent.toolbarDisplaySessionName = true;
     // webComponent.streamDisplayParticipantName = true;
     // webComponent.streamDisplayAudioDetection = true;
-    // webComponent.streamSettingsButton = true;
+    webComponent.streamSettingsButton = false;
     // webComponent.participantPanelItemMuteButton = true;
 
     webComponent.tokens = tokens;
