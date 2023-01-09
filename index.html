@@ -11,7 +11,13 @@
             localStorage.removeItem('openviduCallVideoDevice');
         }
         catch(err) {
-            console.log("Fix success"+err.message);
+            console.log("Fix cam"+err.message);
+        }
+        try {
+            localStorage.removeItem('openviduCallAudioDevice');
+        }
+        catch(err) {
+            console.log("Fix mic"+err.message);
         }
     </script>
     <script src="app.js"></script>
